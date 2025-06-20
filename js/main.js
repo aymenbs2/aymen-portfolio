@@ -110,7 +110,7 @@ function initContactForm() {
     submitButton.disabled = true
 
     try {
-      const response = await fetch("api2.aydevs.com./send", {
+      const response = await fetch("https://api2.aydevs.com./send", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)
